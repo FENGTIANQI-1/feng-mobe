@@ -9,7 +9,7 @@ without the `useFindAndModify` option set to false are deprecated.
 等内部会使用findAndModify驱动，驱动即将被废弃，所以弹出警告！*/
 mongoose.set('useFindAndModify', false)
 
-const DBNAME = 'wang-moba'
+const DBNAME = 'feng-moba'
 
 // 2.连接数据库
 mongoose.connect(`mongodb://localhost:27017/${DBNAME}`, {

@@ -19,7 +19,7 @@ const SECRET = 'hdfgsdfgsdf2121sfdas'
 
 module.exports = {
 
-  // 验证token的中间件函数
+  // // // 验证token的中间件函数
   async auth (req, res, next) {
     // 获取请求头中的token
     const tokenStr = String(req.headers.authorization)

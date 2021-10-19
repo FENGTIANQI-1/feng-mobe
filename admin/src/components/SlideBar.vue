@@ -1,6 +1,6 @@
 <template>
   <div id="slide-bar">
-    <el-menu 
+    <el-menu
       router
       text-color="#bfcbd9"
       background-color="#304156"
@@ -35,9 +35,9 @@
         <el-menu-item index="/resource/articleList">文章列表</el-menu-item>
         <el-menu-item index="/resource/videoAdd">新建视频</el-menu-item>
         <el-menu-item index="/resource/videoList">视频列表</el-menu-item>
-      </el-submenu>      
+      </el-submenu>
 
-       <el-submenu index="4">
+      <el-submenu index="4">
         <template slot="title">
           <i class="el-icon-s-custom"></i>
           <span slot="title">英雄管理</span>
@@ -58,49 +58,48 @@
         <el-menu-item index="/system/userAdd">新建管理员</el-menu-item>
         <el-menu-item index="/system/userList">管理员列表</el-menu-item>
       </el-submenu>
-
-       <el-menu-item class="github-link">
-        <a href="https://github.com/yuchuangye/wang-moba.git" target="_blank">
-          <i class="el-icon-link"></i>
-          <span slot="title">友情链接</span>
-        </a>
-      </el-menu-item>
-     
     </el-menu>
   </div>
 </template>
 
 <script>
-  export default {
-    name: 'SideBar',
-    computed: {
-      isCollapse () {
-        return this.$store.state.isCollapse
-      }
-    }
-  }
+export default {
+  name: "SideBar",
+  computed: {
+    isCollapse() {
+      return this.$store.state.isCollapse;
+    },
+  },
+};
 </script>
 
 <style lang="stylus" scoped>
-  @import "../assets/stylus/variable.styl"
-  #slide-bar
-    .el-menu
-      border: none
+@import '../assets/stylus/variable.styl';
 
-    .el-menu i[class^="el-icon"] 
-      color: $colorD
-      margin-right: 10px 
-    .el-menu .el-menu-item.is-active i[class^="el-icon"] 
-      color: $colorB
-    .el-menu .el-menu-item.is-active.github-link i[class^="el-icon"]
-      color: $colorD !important
+#slide-bar {
+  .el-menu {
+    border: none;
+  }
 
-    .el-menu .el-submenu li,
-    >>> .el-menu .el-submenu ul .el-submenu__title
-      background-color: $colorF !important
-    
-    .el-menu .el-submenu li:hover
-    >>> .el-menu .el-submenu ul .el-submenu__title:hover
-      background-color: $colorG !important 
+  .el-menu i[class^='el-icon'] {
+    color: $colorD;
+    margin-right: 10px;
+  }
 
+  .el-menu .el-menu-item.is-active i[class^='el-icon'] {
+    color: $colorB;
+  }
+
+  .el-menu .el-menu-item.is-active.github-link i[class^='el-icon'] {
+    color: $colorD !important;
+  }
+
+  .el-menu .el-submenu li, >>> .el-menu .el-submenu ul .el-submenu__title {
+    background-color: $colorF !important;
+  }
+
+  .el-menu .el-submenu li:hover, >>> .el-menu .el-submenu ul .el-submenu__title:hover {
+    background-color: $colorG !important;
+  }
+}
 </style>

@@ -1,14 +1,6 @@
 # wang-moba
 
-wang-moba是使用 Node.js (Express.js) + Vue.js (Element UI) 全栈开发的王者荣耀手机端官网和管理后台项目
-
-wang-moba是参考 bilibili全站之巅 教程而开发的，并在此基础上完善了许多功能和细节，在此感谢大佬的教程！
-
-课程地址：<https://www.bilibili.com/video/BV1A4411Y7fi>
-
-项目已上线，欢迎体验！<https://moba.geniusye.xyz>
-
-如果对你有帮助话的帮忙点个star，谢谢！
+feng-moba是使用 Node.js (Express.js) + Vue.js (Element UI) 全栈开发的王者荣耀手机端官网和管理后台项目
 
 ## 项目布局
 
@@ -41,20 +33,4 @@ server -- 服务端
 6. 分类管理
 7. 广告位管理
 8. 管理员管理
-
-![md_1](<https://gitee.com/yuchuangye/wang0moba/raw/master/server/public/readme/md_1.png>)
-
-![md_2](<https://gitee.com/yuchuangye/wang0moba/raw/master/server/public/readme/md_2.png>)
-
-## 前台项目
-
-![md_11](<https://gitee.com/yuchuangye/wang0moba/raw/master/server/public/readme/md_11.PNG>)
-
-![md_12](<https://gitee.com/yuchuangye/wang0moba/raw/master/server/public/readme/md_12.PNG>)
-
-## 许可证
-
-MIT license
-
-Copyright (c) [2020] [name of copyright yuchuangye]
 

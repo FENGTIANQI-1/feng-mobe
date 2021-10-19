@@ -11,6 +11,7 @@ const router = express.Router()
 // 托管静态文件
 router.use('/upload/images', express.static(path.join(__dirname, '../upload/images')))
 router.use('/upload/video', express.static(path.join(__dirname, '../upload/video')))
+router.use('/',express.static(__dirname + '../admin'))
 
 
 // 注册路由规则

@@ -15,6 +15,9 @@ app.use('/admin', routerAdmin)
 app.use('/web', routerWeb)
 
 
+app.use('/',express.static(__dirname + '/admin'))
+app.use('/',express.static(__dirname + '/web'))
+
 const PORT = 3007
 
 app.listen(PORT, () => {
